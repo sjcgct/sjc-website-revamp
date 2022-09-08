@@ -168,19 +168,6 @@ a {
 }
 
 /* Headings */
-.heading-container {
-  text-align: center;
-}
-
-.heading-container h1 {
-  /* text-transform: uppercase; */
-  margin: 0.3125em 0;
-  background-color: #fff;
-  position: relative;
-  display: inline-block;
-  padding: 0 10px;
-}
-
 .style-1:before {
   content: "";
   height: 3px;
@@ -193,7 +180,7 @@ a {
   z-index: -999;
 }
 
-.style-2:before {
+/* .style-2:before {
   content: "";
   height: 6px;
   border-top: 2px dotted black;
@@ -203,4 +190,30 @@ a {
   top: 45%;
   left: -50%;
   z-index: -999;
+} */
+
+.divider {
+  display: flex;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+}
+
+.line {
+  align-items: center;
+  margin: 0.5em 0.5em;
+}
+
+.line:before,
+.line:after {
+  height: 1px;
+  margin: 0 1rem;
+}
+
+.razor:before,
+.razor:after {
+  box-shadow: 0 1px 0 black;
 }

@@ -19,7 +19,7 @@ function Nav() {
                   alt="Workflow"
                 />
               </div>
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/" passHref>
                     <a
@@ -153,11 +153,11 @@ function Nav() {
                 </div>
               </div> */}
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-black"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -210,7 +210,7 @@ function Nav() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden bg-pink-bg" id="mobile-menu">
+            <div className="lg:hidden bg-pink-bg" id="mobile-menu">
               <div ref={ref} className="ml-4 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link href="/" passHref>
                   <a
