@@ -10,13 +10,13 @@ module.exports = {
       current: "currentColor",
       white: "#ffffff",
       black: "#000000",
-      "dominant-bg": "#f9f3ee",
-      "pink-bg": "#f9e5ee",
-      "purple-bg": "#e1e9f2",
-      "bg-green": "#eef9f2",
+      dominantbg: "#f9f3ee",
+      pinkbg: "#efe6f2",
+      purplebg: "#e1e9f2",
+      greenbg: "#eef9f2",
       pink: "#f9ceee",
       green: "#ccf3ee",
-      "dark-green": "#97c4b8",
+      darkgreen: "#97c4b8",
       orange: "#f9b68a",
       grey: {
         100: "#f3f4f6",
@@ -50,6 +50,24 @@ module.exports = {
           },
         },
       });
+    },
+  ],
+  safelist: [
+    "transparent",
+    "current",
+    "white",
+    "black",
+    "dominantbg",
+    "pinkbg",
+    "purplebg",
+    "greenbg",
+    "pink",
+    "green",
+    "darkgreen",
+    "orange",
+    {
+      pattern:
+        /(bg|text|border)-(transparent|current|white|black|dominantbg|pinkbg|purplebg|greenbg|pink|green|darkgreen|orange)/,
     },
   ],
 };

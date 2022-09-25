@@ -1,9 +1,7 @@
 const Heading = ({ title }) => {
   return (
     <>
-      <h2 class="divider line razor title text-3xl md:text-4xl" contenteditable>
-        Recent Stories
-      </h2>
+      <h2 className="divider line razor title text-3xl md:text-4xl">{title}</h2>
     </>
   );
 };

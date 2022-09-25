@@ -5,12 +5,22 @@ import { Client } from "../prismic-configuration";
 import Link from "next/link";
 // import Heading from "../components/Heading";
 import RecentStories from "../components/Homepage/RecentStories";
+import HumansOfGct from "../components/Homepage/HumansOfGct";
+import AbcChannel from "../components/Homepage/AbcChannel";
+import AlumSpace from "../components/Homepage/AlumSpace";
 // import Layout from "../components/Layout";
 
 export default function Politics({ articles }) {
   return (
     <div>
       <RecentStories />
+
+      <HumansOfGct />
+
+      <AlumSpace />
+
+      <AbcChannel />
+
       {articles.results.map((article, index) => (
         <div className="mb-10" key={article.uid}>
           <Link href={`article/${article.uid}`}>
