@@ -1,7 +1,7 @@
 const LargeStoryCard = () => {
   return (
     <div className="main-column place-items-center py-4">
-      <div className="image-container w-full h-auto">
+      <div className="w-full h-auto">
         <img src="https://source.unsplash.com/random/900x600" />
       </div>
       <div className="heading-container py-2">

@@ -7,9 +7,9 @@ const AbcChannel = () => {
       <Heading title="ABC Channel" />
       <div className="flex md:gap-y-8 md:my-4 p-6">
         <iframe
-          class="aspect-video w-full h-auto"
+          className="aspect-video w-full h-auto"
           src="https://www.youtube.com/embed/msizPweg3kE"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope;"
           allowFullScreen
         ></iframe>

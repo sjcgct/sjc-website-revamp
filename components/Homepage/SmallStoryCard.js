@@ -1,13 +1,13 @@
 const SmallStoryCard = () => {
   return (
-    <div class="flex items-center justify-center mb-4">
-      <div class="basis-1/2">
+    <div className="flex items-center justify-center mb-4">
+      <div className="basis-1/2">
         <img
           className="w-full h-auto"
           src="https://source.unsplash.com/random/600x400"
         />
       </div>
-      <div class="p-2 flex flex-col self-start">
+      <div className="p-2 flex flex-col self-start">
         <h1 className="text-sm md:text-lg title mb-2">
           Paris is one of the most beautiful cities in France.
         </h1>

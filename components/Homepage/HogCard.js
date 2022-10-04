@@ -1,6 +1,6 @@
 const HogCard = () => {
   return (
-    <div className="w-[250px] h-auto mx-2 my-4 relative">
+    <div className="w-[250px] h-auto mx-2 my-4 relative z-1">
       <img
         src="https://source.unsplash.com/random/400x400"
         className="border-b pb-3 mb-1"
