@@ -29,7 +29,7 @@ const StoryCard = ({
           />
           <p className="self-center text-xs md:text-base mr-3 md:mr-5">
             {authorInfo.name}
-          </p>{authorInfo.name}
+          </p>
           <p className="self-center text-xs md:text-base text-grey-600">
             {date}
           </p>

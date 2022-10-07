@@ -38,6 +38,8 @@ export const linkResolver = (doc) => {
   return "/";
 };
 
+export const predicate = prismic.predicate;
+
 // creating a prismic client  object
 
 export const client = prismic.createClient(endpoint, { accessToken });

@@ -10,9 +10,10 @@ const Image = ({ slice }) => {
           <PrismicNextImage field={slice.primary.image} layout="responsive" />
         </div>
       )}
-      {prismicH.isFilled.richText(slice.primary.imageDescription) && (
+      {console.log("hi", slice.primary)}
+      {prismicH.isFilled.richText(slice.primary["image-description"]) && (
         <figcaption className="text-center font-serif italic tracking-tight text-grey-500">
-          <PrismicRichText field={slice.primary.caption} />
+          <PrismicRichText field={slice.primary["image-description"]} />
         </figcaption>
       )}
     </figure>

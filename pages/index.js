@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Prismic from "prismic-javascript";
-import { RichText } from "prismic-reactjs";
+// import Prismic from "prismic-javascript";
+// import { RichText } from "prismic-reactjs";
 import { client } from "../prismic-configuration";
 import Link from "next/link";
 // import Heading from "../components/Heading";
@@ -15,7 +15,7 @@ export default function Home({ stories, hogs }) {
   return (
     <div>
       <RecentStories />
-      
+
       <HumansOfGct />
 
       <AlumSpace />
