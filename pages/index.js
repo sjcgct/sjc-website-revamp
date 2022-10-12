@@ -14,25 +14,15 @@ import Internview from "../components/Homepage/InternView";
 export default function Home({ stories, hogs }) {
   return (
     <div>
-      <RecentStories />
+      <RecentStories stories={stories} />
 
-      <HumansOfGct />
+      <HumansOfGct hogs={hogs} />
 
       <AlumSpace />
 
       <AbcChannel />
 
       <Internview />
-
-      {/* {articles.results.map((article, index) => (
-        <div className="mb-10" key={article.uid}>
-          <Link href={`article/${article.uid}`}>
-            <h1 className="bold text-3xl text-blue-600 cursor-pointer">
-              {RichText.asText(article.data.title)}
-            </h1>
-          </Link>
-        </div>
-      ))} */}
     </div>
   );
 }
@@ -81,12 +71,12 @@ export async function getServerSideProps() {
       }`,
   });
 
-  console.log(hogs);
+  // console.log(hogs);
 
   return {
     props: {
-      stories,
-      hogs,
+      stories: stories.results,
+      hogs: hogs.results,
     },
   };
 }

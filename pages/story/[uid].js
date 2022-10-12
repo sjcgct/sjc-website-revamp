@@ -3,6 +3,7 @@ import { SliceZone } from "@prismicio/react";
 import { components } from "../../slices";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
+import Link from "next/link";
 import * as prismicH from "@prismicio/helpers";
 import OtherStoriesCard from "../../components/Stories/OtherStoriesCard";
 
@@ -73,12 +74,11 @@ export default function Story({ page, disclaimer, otherStories }) {
             </p>
           )}
 
-          <a
-            href="/"
-            className="mx-auto text-green content-bold text-sm md:text-base uppercase underline"
-          >
-            View Full Profile
-          </a>
+          <Link href="/" passHref>
+            <a className="mx-auto text-green content-bold text-sm md:text-base uppercase underline">
+              View Full Profile
+            </a>
+          </Link>
         </div>
       </div>
 

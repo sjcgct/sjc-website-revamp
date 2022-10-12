@@ -62,11 +62,7 @@ export default function StoriesPage({ articles, totalPages }) {
           {stories.map((story) => (
             <HogCard
               key={story.id}
-              uid={story.uid}
-              title={story.data.title[0].text}
-              date={story.data.date}
-              name={story.data.name}
-              image={story.data.featured_image.url}
+              story={story}
             />
           ))}
         </div>

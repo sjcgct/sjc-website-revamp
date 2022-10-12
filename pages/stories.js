@@ -55,7 +55,7 @@ export default function StoriesPage({ articles, totalPages }) {
 
   return (
     <Canvas bgcolor={"dominantbg"}>
-      {console.log(articles)}
+      {console.log(articles[0].data.author)}
       <InfiniteScroll
         dataLength={stories.length}
         next={getMoreStories}
@@ -69,16 +69,7 @@ export default function StoriesPage({ articles, totalPages }) {
       >
         <Heading title={"Stories"} />
         {stories.map((story) => (
-          <StoryCard
-            key={story.id}
-            uid={story.uid}
-            title={story.data.title[0].text}
-            date={story.data.date}
-            authorInfo={story.data.author.data}
-            categoryInfo={story.data.category.data}
-            image={story.data.featured_image.url}
-            excerpt={story.data.excerpt}
-          />
+          <StoryCard key={story.id} story={story} />
         ))}
       </InfiniteScroll>
     </Canvas>

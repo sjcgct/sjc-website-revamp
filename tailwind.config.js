@@ -65,6 +65,7 @@ module.exports = {
     "green",
     "darkgreen",
     "orange",
+    "active",
     {
       pattern:
         /(bg|text|border)-(transparent|current|white|black|dominantbg|pinkbg|purplebg|greenbg|pink|green|darkgreen|orange)/,

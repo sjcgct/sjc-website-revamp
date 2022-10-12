@@ -29,54 +29,53 @@ const Footer = () => {
         </p>
         <ul className="px-2 content-bold text-sm flex flex-wrap list-none mb-10">
           <li className="mr-4">
-            <a href="/" className="">
-              Stories
-            </a>
+            <Link href="/" passHref>
+              <a className="">Stories</a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
+            <Link href="/" passHref>
+              <a className="">Humans of GCT</a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
+            <Link href="/" passHref>
+              <a className="">Humans of GCT</a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
+            <Link href="/" passHref>
+              <a className="">Humans of GCT</a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
+            <Link href="/" passHref>
+              <a className="">Humans of GCT</a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
-          </li>
-          <li className="mr-4">
-            <a href="/" className="">
-              Humans of GCT
-            </a>
+            <Link href="/" passHref>
+              <a className="">Humans of GCT</a>
+            </Link>
           </li>
         </ul>
         <ul className="flex flex-wrap mb-8 px-2 content text-sm list-none">
           <span className="content-bold mr-4">Follow us</span>
           <li className="mr-3">
+            <Link href="/" passHref>
+              <a className="">Twitter</a>
+            </Link>
+          </li>
+          <li className="mr-3">
+            <Link href="/" passHref>
+              <a className="">Twitter</a>
+            </Link>
             <a href="/">Twitter</a>
           </li>
           <li className="mr-3">
-            <a href="/">Twitter</a>
-          </li>
-          <li className="mr-3">
-            <a href="/">Twitter</a>
-          </li>
-          <li className="mr-3">
-            <a href="/">Twitter</a>
+            <Link href="/" passHref>
+              <a className="">Twitter</a>
+            </Link>
           </li>
         </ul>
         <hr className="px-2 color-dominantbg"></hr>

@@ -9,14 +9,14 @@ const repoName = "sjcgctrepo";
 const endpoint = prismic.getEndpoint(repoName);
 
 export const linkResolver = (doc) => {
-  if (doc) {
+  if (doc.type) {
     // URL for a category type
     if (doc.type === "category") {
       return `/category/${doc.uid}`;
     }
 
     // URL for a blog type
-    if (doc.type === "blog") {
+    if (doc.type === "blogs") {
       return `/story/${doc.uid}`;
     }
 
@@ -31,6 +31,10 @@ export const linkResolver = (doc) => {
 
     if (doc.type === "internview") {
       return `/internview/${doc.internview}`;
+    }
+
+    if (doc.type === "author") {
+      return `/author/${doc.slug}`;
     }
   }
 

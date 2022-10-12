@@ -16,7 +16,7 @@ const OtherStoriesCard = ({
         <img src={image} />
       </div>
       <div className="py-2">
-        <h2 className="title text-xl mb-3 max-h-[52px] overflow-hidden">
+        <h2 className="title text-xl mb-3 max-h-[56px] overflow-hidden">
           {title}
         </h2>
         <div className="flex flex-row justify-start">

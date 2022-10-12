@@ -31,50 +31,50 @@ function Nav() {
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/stories" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/stories" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       Stories
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/aperture" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/aperture" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       Aperture
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/humansofgct" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/humansofgct" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       Humans of GCT
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/alumspace" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/alumspace" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       AlumSpace
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/internview" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/internview" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       Internview
@@ -83,28 +83,26 @@ function Nav() {
 
                   <Link href="/" passHref>
                     <a
-                      className={`${
-                        router.pathname === "/" ? "active" : ""
-                      } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
+                      className={`px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       ABC Channel
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/about" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/about" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       About
                     </a>
                   </Link>
 
-                  <Link href="/" passHref>
+                  <Link href="/team" passHref>
                     <a
                       className={`${
-                        router.pathname === "/" ? "active" : ""
+                        router.pathname === "/team" ? "active" : ""
                       } px-3 py-2 text-base no-underline px-2 mr-3 hover:text-green`}
                     >
                       Team
@@ -112,46 +110,6 @@ function Nav() {
                   </Link>
                 </div>
               </div>
-              {/* <div className="hidden md:block">
-                <div className="ml-auto flex items-baseline space-x-4">
-                  <Link href="/" passHref>
-                    <a
-                      className={`${
-                        router.pathname === "/" ? "active" : ""
-                      } transition duration-300 no-underline px-2 mr-3 hover:text-red`}
-                    >
-                      Home
-                    </a>
-                  </Link>
-                  <Link href="/about" passHref>
-                    <a
-                      className={`${
-                        router.pathname === "/about" ? "active" : ""
-                      } transition duration-300 no-underline px-2 mr-3 hover:text-red`}
-                    >
-                      About
-                    </a>
-                  </Link>
-                  <Link href="/blogs" passHref>
-                    <a
-                      className={`${
-                        router.pathname === "/blogs" ? "active" : ""
-                      } transition duration-300 no-underline px-2 mr-3 hover:text-red`}
-                    >
-                      Blog
-                    </a>
-                  </Link>
-                  <Link href="/proofofwork" passHref>
-                    <a
-                      className={`${
-                        router.pathname === "/proofofwork" ? "active" : ""
-                      } transition duration-300 no-underline px-2 mr-3 hover:text-red`}
-                    >
-                      Proof of Work
-                    </a>
-                  </Link>
-                </div>
-              </div> */}
             </div>
             <div className="-mr-2 flex lg:hidden">
               <button
@@ -214,80 +172,83 @@ function Nav() {
               <div ref={ref} className="ml-4 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link href="/" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Home
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/stories" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/stories" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Stories
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/humansofgct" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/humansofgct" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Humans of GCT
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/alumspace" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/alumspace" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     AlumSpace
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/internview" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/internview" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Internview
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/aperture" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/aperture" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Aperture
                   </a>
                 </Link>
 
                 <Link href="/" passHref>
-                  <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
-                  >
-                    ABC Channel
-                  </a>
+                  <a className={`block px-3 py-2 text-base`}>ABC Channel</a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/about" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/about" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     About
                   </a>
                 </Link>
 
-                <Link href="/" passHref>
+                <Link href="/team" passHref>
                   <a
-                    href="#"
-                    className="focus:bg-gray-700 block px-3 py-2 text-base"
+                    className={`${
+                      router.pathname === "/team" ? "active" : ""
+                    } block px-3 py-2 text-base`}
                   >
                     Team
                   </a>

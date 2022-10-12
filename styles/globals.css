@@ -232,6 +232,10 @@ a {
   box-sizing: border-box;
 }
 
+.active {
+  color: theme("colors.green");
+}
+
 .title {
   font-family: "Playfair Display";
   font-weight: 700;
