@@ -46,10 +46,6 @@ export default function Story({ page, disclaimer, otherStories }) {
         </div>
         <div className="w-full mx-auto max-w-2xl px-1 border-b-[1px] border-grey-500 py-8 md:pt-14 post-container flex flex-col align-center justify-center">
           <SliceZone slices={page.data.body} components={components} />
-          <p>
-            lorem10 dskgkls wohowi oiwdfio sadofhsoai oiafo oidfoi aoifiaos c8uw
-            jwefu <strong>fallback</strong> <a href="/">Hi bo</a>
-          </p>
         </div>
       </article>
 

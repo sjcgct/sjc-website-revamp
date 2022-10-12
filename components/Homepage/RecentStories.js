@@ -25,17 +25,7 @@ const RecentStories = ({ stories }) => {
             {console.log(otherStories)}
             {otherStories &&
               otherStories.map((story) => {
-                return (
-                  <SmallStoryCard
-                    story={story}
-                    title={story.data.title[0].text}
-                    featuredImage={story.data.featured_image}
-                    author={story.data.author.data}
-                    date={story.data.date}
-                    excerpt={story.data.excerpt}
-                    uid={story.uid}
-                  />
-                );
+                return <SmallStoryCard story={story} key={story.id} />;
               })}
           </div>
         </div>

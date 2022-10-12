@@ -70,7 +70,6 @@ const Footer = () => {
             <Link href="/" passHref>
               <a className="">Twitter</a>
             </Link>
-            <a href="/">Twitter</a>
           </li>
           <li className="mr-3">
             <Link href="/" passHref>
