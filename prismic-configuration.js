@@ -34,7 +34,7 @@ export const linkResolver = (doc) => {
     }
 
     if (doc.type === "author") {
-      return `/author/${doc.slug}`;
+      return `/author/${doc.uid}`;
     }
   }
 
